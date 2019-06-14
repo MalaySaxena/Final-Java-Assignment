@@ -32,5 +32,5 @@ public void setPrName(String prName) {
 @Override
 public String toString() {
 	return "Product [id=" + PrId + ", name=" + PrName + ", price=" + Price + ", quantitiy=" + Quantity +"]";
-}	mm
+}	
 }
