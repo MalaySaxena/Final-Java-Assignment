@@ -1,24 +1,40 @@
-  package classes;
-
-public class Customer {
- int id;
- public int getId() {
-	return id;
-}
-public void setId(int id) {
-	this.id = id;
-}
-String Name = new String();
-public String getName() {
-	return Name;
-}
-public void setName(String name) {
-	this.Name = name;
-}
+package com.jcg.hibernate.maven;
  
-@Override
-public String toString() {
-	return "Customer [id=" + id + ", text=" + Name + "]";
-}	
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+ 
+@Entity
+@Table(name = "user_table")
+public class Customer {
+	 
+    @Id
+    @Column(name = "user_id")
+    private int userid;
+ 
+    @Column(name = "user_name")
+    private String username;
+
+    public int getUserid() {
+        return userid;
+    }
+ 
+    public void setUserid(int userid) {
+        this.userid = userid;
+    }
+ 
+    public String getUsername() {
+        return username;
+    }
+ 
+    public void setUsername(String username) {
+        this.username = username;
+    }
+ 
+	@Override
+	public String toString() {
+		return "Customer [id=" + userid + ", text=" + username + "]";
+	}	
 }
  
