@@ -17,7 +17,7 @@ public class Product {
 		@Id
 		@GeneratedValue(strategy=GenerationType.AUTO) 
 		@Column(name="PR_ID")	
-		private Long id;
+		private int id;
 	
 
 		@Column(name="PR_NAME")	
@@ -29,10 +29,13 @@ public class Product {
 		@Column(name="QUANTITY")
 		private int quantity;
 		
-		//to understand
-		public Message() {}
-		public Message(String text) {
+		public void Product() {}
+		public void Product(int id, String text, Long price, int quantity )
+		{
+			this.id = id;
 			this.text = text;
+			this.price = price;
+			this.quantity = quantity;
 		}
 		
 		@Override
