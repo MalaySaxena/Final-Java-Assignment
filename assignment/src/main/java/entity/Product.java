@@ -7,11 +7,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-public class Product {
-	@Entity
-	@Table(name="product")
-	public class Message {
 
+@Entity
+@Table(name="product")
+public class Product {
+	
+
+	
 
 		
 		@Id
@@ -24,13 +26,13 @@ public class Product {
 		private String text;
 		
 		@Column(name="PRICE")	
-		private Long price;
+		private double price;
 		
 		@Column(name="QUANTITY")
 		private int quantity;
 		
-		public void Product() {}
-		public void Product(int id, String text, Long price. int quantity )
+		public Product() {}
+		public Product(int id, String text, double price, int quantity )
 		{
 			this.id = id;
 			this.text = text;
@@ -44,4 +46,4 @@ public class Product {
 		}	
 		
 	}
-}
+
