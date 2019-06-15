@@ -32,6 +32,11 @@ public class Customer {
 			this.text=text;
 		}
 		
+		public void setname(String t)
+		{
+			this.text=t;
+		}
+		
 		
 		@Override
 		public String toString() {

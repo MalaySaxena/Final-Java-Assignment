@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 
+
 @Entity
 @Table(name="product")
 public class Product {
@@ -38,6 +39,19 @@ public class Product {
 			this.text = text;
 			this.price = price;
 			this.quantity = quantity;
+		}
+		Product p = new Product
+		public void setname(String t)
+		{
+			this.text=t;
+		}
+		public void setprice(double p)
+		{
+			this.price=p;
+		}
+		public void setquant(int q)
+		{
+			this.quantity=q;
 		}
 		
 		@Override
