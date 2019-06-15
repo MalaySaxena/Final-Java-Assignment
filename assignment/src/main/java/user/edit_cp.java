@@ -19,6 +19,7 @@ public class edit_cp {
 		try {
 			txn.begin();
 	
+			@SuppressWarnings("resource")
 			Scanner in = new Scanner(System.in);
 			
 			System.out.println("To edit select option from the list");

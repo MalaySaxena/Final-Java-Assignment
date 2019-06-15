@@ -13,6 +13,7 @@ public class add_cp {
 	
 	public static void main(String[] args) {
 		session.beginTransaction();
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		
 		System.out.println("To add select option from the list");
@@ -37,10 +38,7 @@ public class add_cp {
 				addProduct(pi,pn,pp,pq);
         		break;
         }
-		Customer customer = new Customer(1, "Ram");
-		Product product = new Product(1,"Fridge",1000.55,50);
-		
-		
+				
 		session.getTransaction().commit();
 		session.close();
 	}

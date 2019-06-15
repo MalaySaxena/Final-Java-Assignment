@@ -14,6 +14,7 @@ public class del_cp {
 
 	public static void main(String[] args) {
 				Transaction txn = session.getTransaction();
+				@SuppressWarnings("resource")
 				Scanner in = new Scanner(System.in);
 		
 		try {
