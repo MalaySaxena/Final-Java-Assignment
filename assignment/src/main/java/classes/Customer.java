@@ -1,4 +1,5 @@
-package com.jcg.hibernate.maven;
+package classes;
+
  
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -6,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
  
 @Entity
-@Table(name = "user_table")
+@Table(name = "customer_table")
 public class Customer {
 	 
     @Id

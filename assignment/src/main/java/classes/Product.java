@@ -1,4 +1,4 @@
-package com.jcg.hibernate.maven;
+package classes;
  
 import javax.persistence.Column;
 import javax.persistence.Entity;
