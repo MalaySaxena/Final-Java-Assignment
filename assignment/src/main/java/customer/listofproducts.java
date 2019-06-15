@@ -4,19 +4,13 @@ import org.hibernate.Session;
 
 import util.HibernateUtil;
 
-import entity.Customer;
+import entity.Product;
 
-public class viewprodet {
-
+public class listofproducts {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
 		Session session = HibernateUtil.getSessionFactory().openSession();
-		session.beginTransaction();
 		
-		Customer customobj = new Customer();
-		
-
-	}
-
-}
+			session.beginTransaction();
+			
+			
+}}
