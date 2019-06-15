@@ -40,11 +40,26 @@ public class add_cp {
 		Customer customer = new Customer(1, "Ram");
 		Product product = new Product(1,"Fridge",1000.55,50);
 		
-		session.save(customer);    
-		session.save(product);
-        
+		
 		session.getTransaction().commit();
 		session.close();
 	}
+	private static void addCustomer( int id, String name)
+	{
+		Customer cus = (Customer)session.get(Customer.class,id );
+		cus.setUsername(name);
+		session.save(cus);    
+		
+	}
+	private static void addProduct( int id, String name, double price, int quant)
+	{
+		Product pro = (Product)session.get(Product.class,id );
+		pro.setPrName(name);
+		pro.setPrice(price);
+		pro.setQuantity(quant);
+	
+		session.save(pro);
+        }
+	
 
 }
