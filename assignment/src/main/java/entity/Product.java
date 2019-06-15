@@ -40,7 +40,7 @@ public class Product {
 			this.price = price;
 			this.quantity = quantity;
 		}
-		Product p = new Product
+		
 		public void setname(String t)
 		{
 			this.text=t;
