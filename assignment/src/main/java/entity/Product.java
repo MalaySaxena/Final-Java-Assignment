@@ -20,21 +20,22 @@ public class Product {
 		@Id
 		@GeneratedValue(strategy=GenerationType.AUTO) 
 		@Column(name="PR_ID")	
-		private int id;
+		private int prid;
 	
 
 		@Column(name="PR_NAME")	
-		private String text;
+		private String prtext;
 		
 		@Column(name="PRICE")	
-		private double price;
+		private double prprice;
 		
 		@Column(name="QUANTITY")
-		private int quantity;
+		private int prquant;
 		
 		public Product() {}
 		public Product(int id, String text, double price, int quantity )
 		{
+<<<<<<< HEAD
 			this.id = id;
 			this.text = text;
 			this.price = price;
@@ -52,11 +53,43 @@ public class Product {
 		public void setquant(int q)
 		{
 			this.quantity=q;
+=======
+			this.prid = id;
+			this.prtext = text;
+			this.prprice = price;
+			this.prquant = quantity;
+>>>>>>> 29b62a51a7c620b2e21b9196141147eedf849dc9
 		}
+		public int getQuantity() {
+	    	return prquant;
+	    }
+	    public void setQuantity(int quantity) {
+	    	prquant = quantity;
+	    }
+	    public double getPrice() {
+	    	return  prprice;
+	    }
+	    public void setPrice(double price) {
+	    	prprice = price;
+	    }
+	    public int getPrId() {
+	    	return prid;
+	    }
+	    public void setPrId(int prId) {
+	    	prid = prId;
+	    }
+	    public String getPrName() {
+	    	return prtext;
+	    }
+	    public void setPrName(String prName) {
+	    	prtext = prName;
+	    }
+
+
 		
 		@Override
 		public String toString() {
-			return "Message [id=" + id + ", text=" + text + "]";
+			return "Message [id=" + prid + ", text=" + prtext + "]";
 		}	
 		
 	}

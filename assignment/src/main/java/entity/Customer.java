@@ -19,28 +19,38 @@ public class Customer {
 		@Id
 		@GeneratedValue(strategy=GenerationType.AUTO) 
 		@Column(name="ID")	
-		private int id;
+		private int cussid;
 	
 
 		@Column(name="CUSTOMER_NAME")	
-		private String text;
+		private String cussname;
 		
 		public Customer() {}
 		public Customer(int id, String text)
 		{
-			this.id=id;
-			this.text=text;
+			this.cussid=id;
+			this.cussname=text;
 		}
 		
-		public void setname(String t)
-		{
-			this.text=t;
-		}
-		
+		  public int getUserid() {
+		        return cussid;
+		    }
+		 
+		    public void setUserid(int userid) {
+		        this.cussid = userid;
+		    }
+		 
+		    public String getUsername() {
+		        return cussname;
+		    }
+		 
+		    public void setUsername(String username) {
+		        this.cussname = username;
+		    }
 		
 		@Override
 		public String toString() {
-			return "Message [id=" + id + ", text=" + text + "]";
+			return "Message [id=" + cussid + ", text=" + cussname + "]";
 		}	
 		
 	}
